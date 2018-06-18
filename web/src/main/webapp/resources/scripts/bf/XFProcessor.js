@@ -1371,7 +1371,7 @@ define(["dojo/_base/declare",
 
         _handleUploadProgressEvent:function(xmlEvent) {
             console.debug("XFProcessor._handleUploadProgressEvent: xmlEvent:",xmlEvent);
-            var xfControlId = xmlEvent.contextInfo.targetId;
+            var xfControlId = xmlEvent.contextInfo.targetid;
             // if XForms Control Dijit allready exists call handleStateChanged on selected control
             if (registry.byId(xfControlId+"-value") != undefined) {
                 registry.byId(xfControlId+"-value").updateProgress(xmlEvent.contextInfo.progress);
