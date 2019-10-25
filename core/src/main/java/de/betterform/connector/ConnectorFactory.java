@@ -255,7 +255,7 @@ public abstract class ConnectorFactory {
             start = toReplace.indexOf("{$");
             end = toReplace.indexOf('}');
             if (start == -1 || end == -1) {
-                hasTokens = false; //exit                                    ›
+                hasTokens = false;
                 substitutedString.append(toReplace);
             } else {
                 substitutedString.append(toReplace.substring(0, start));
